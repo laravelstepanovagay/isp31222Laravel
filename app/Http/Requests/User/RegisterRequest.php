@@ -18,4 +18,10 @@ class RegisterRequest extends FormRequest
             "password_confirmation" => "required | string",
         ];
     }
+    public function attributes()
+    {
+        return [
+            "fio" => "ФИО"
+        ];
+            }
 }
