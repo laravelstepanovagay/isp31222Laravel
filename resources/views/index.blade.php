@@ -4,7 +4,7 @@
 
 @section('body')
 {{--    @dd(now()->format('Y-M-D'))--}}
-
+{{--<x-vanya>--}}
    <div class="bg-white rounded-4 shadow-sm p-4">
        <form action="{{route("register.create")}}" method="get">
             @csrf
@@ -16,5 +16,5 @@
            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
        </form>
    </div>
-
+{{--</x-vanya>--}}
 @endsection
