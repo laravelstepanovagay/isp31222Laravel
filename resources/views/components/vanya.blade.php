@@ -1,4 +1,4 @@
-<h1 class="mb-4 fs-2">{{$title}}
+<h1 class="mb-4 fs-2">
     @empty($title)
         @yield('title')
     @else

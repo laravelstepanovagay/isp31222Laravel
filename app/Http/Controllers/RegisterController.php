@@ -29,12 +29,12 @@ class RegisterController extends Controller
         }
     }
 }
-if (Auth::attempt($data)) {
+//if (Auth::attempt($data)) {
 //    correct
-    return redirect()->route("register.index");
-} else {
-    return redirect()->back()->withErrors([
-        "password" => "Неверный логин или пароль"
-    ]);
+//    return redirect()->route("register.index");
+//} else {
+//    return redirect()->back()->withErrors([
+//        "password" => "Неверный логин или пароль"
+//    ]);
 //    wrong
-}
+//}
