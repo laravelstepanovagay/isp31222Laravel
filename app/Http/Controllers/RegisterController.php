@@ -21,9 +21,9 @@ class RegisterController extends Controller
 //        $data = $request->only(['name','email','birthday','password']);
         $data = $request->except(["password_confirmation"]);
 
-//        $user = User::create($data);
+        $user = User::create($data);
         if ($user) {
-            return redirect()->route("register.index");
+            return redirect()->route("login.index");
         } else {
             abort(404);
         }

@@ -14,8 +14,8 @@ class RegisterRequest extends FormRequest
             "fio" => "required | string",
             "email" => "required | email:rfc|unique:App\Models\User,email",
             "birthday" => "required | date_format:Y-m-d",
-            "password" => "required" | "string" | "confirmed",
-            "password_confirmation" => "required | string",
+            "password" => "required",
+            "password_confirmation" => "required"
         ];
     }
     public function attributes()
